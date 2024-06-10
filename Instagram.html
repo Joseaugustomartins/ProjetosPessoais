@@ -1,73 +1,80 @@
-<html>
-    <head>
-        <style>
-            body {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-                margin: 0;
-            }
-            a {
-                text-decoration: none;
-            }
-            .box {
-                font-size: 20px;
-                color: white;
-                height: 100vh; /* Ocupa toda a altura da tela */
-                width: 100vw; /* Ocupa toda a largura da tela */
-                border-radius: 0; /* Remove as bordas arredondadas */
-                background: #191919;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-            }
-            .buttons-container {
-                display: flex;
-                justify-content: space-around;
-                width: 150px;
-            }
-            button {
-                height: 30px;
-                width: 50px;
-                background: white;
-                border-radius: 5px;
-                color: blue;
-                font-weight: 600;
-                border: none;
-                cursor: pointer;
-            }
-            button a {
-                color: blue;
-                display: block;
-                height: 100%;
-                width: 100%;
-                text-align: center;
-                line-height: 30px; /* Para centralizar verticalmente o texto no botão */
-            }
-        </style>
-    </head>
-    <body>
-        <div class="box">
-            <p>C*zinho hoje?</p>
-            <div class="buttons-container">
-                <button>
-                    <a href="https://link.com">Sim</a>
-                </button>
-                <button id="no">Não</button>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #191919;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .box {
+            font-size: 20px;
+            color: white;
+            height: 250px;
+            width: 350px;
+            border-radius: 45px;
+            background: #191919;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .buttons-container {
+            display: flex;
+            justify-content: space-around;
+            height: 50px;
+            width: 150px;
+        }
+        button {
+            height: 30px;
+            width: 50px;
+            background: white;
+            border-radius: 5px;
+            color: blue;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+        }
+        button a {
+            color: blue;
+            text-decoration: none;
+            display: block;
+            height: 100%;
+            width: 100%;
+            line-height: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>C*zinho hoje?</p>
+        <div class="buttons-container">
+            <button onclick="location.href='rocket.html'">Sim</button>
+            <button id="no">Não</button>
         </div>
-    </body>
+    </div>
     <script>
         let button = document.getElementById('no');
         let height = window.innerHeight - 50;
         let width = window.innerWidth - 50;
 
-        button.addEventListener("mouseover", function() {
+        button.addEventListener("mouseover", function () {
             button.style.position = "absolute";
             button.style.top = Math.random() * height + "px";
             button.style.left = Math.random() * width + "px";
         });
     </script>
+</body>
 </html>
+
+
+
