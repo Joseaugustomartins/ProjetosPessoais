@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial, sans-serif';
+    background: url('imagens/fundo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+.capitulo {
+    margin: 20px auto;
+    width: 60%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.galeria img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.navegacao {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #ff6699;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff3366;
+}
